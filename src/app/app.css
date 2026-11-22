@@ -1,0 +1,177 @@
+
+.planner-container {
+  min-height: 100vh;
+  padding: 50px 20px;
+  background: linear-gradient(135deg, #f6e9ff, #e9e4ff);
+  font-family: Arial, sans-serif;
+  text-align: center;
+  box-sizing: border-box;
+}
+
+header {
+  margin-bottom: 40px;
+}
+
+header h1 {
+  color: #7021a3;
+  font-size: 42px;
+  font-weight: bold;
+}
+
+header p {
+  color: #666;
+  font-size: 18px;
+}
+
+.welcome {
+  background: white;
+  max-width: 650px;
+  margin: 0 auto;
+  padding: 40px;
+  border-radius: 18px;
+  box-shadow: 0 8px 25px rgba(100, 50, 150, 0.15);
+}
+
+.welcome h2 {
+  color: #7021a3;
+  margin-bottom: 20px;
+}
+
+.welcome p {
+  color: #555;
+  line-height: 1.6;
+  margin-bottom: 25px;
+}
+
+button {
+  background-color: #8e44ad;
+  color: white;
+  padding: 12px 25px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+button:hover {
+  background-color: #7021a3;
+}
+
+/* Custom Angular Material button styling */
+.create-btn {
+  --mdc-filled-button-container-color: #8e44ad;
+  --mdc-filled-button-label-text-color: white;
+
+  border-radius: 8px;
+  padding: 12px 25px;
+}
+
+.create-btn:hover {
+  --mdc-filled-button-container-color: #7021a3;
+}
+
+/* Override Angular Material button colours */
+button.create-btn.mat-mdc-unelevated-button {
+  background-color: #8e44ad;
+  color: white;
+}
+
+button.create-btn.mat-mdc-unelevated-button:hover {
+  background-color: #7021a3;
+}
+
+/* Event creation form styling */
+.event-form {
+  margin-top: 25px;
+}
+
+.event-form form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  max-width: 450px;
+  margin: 25px auto 0;
+}
+
+.event-form form > div {
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+  gap: 8px;
+}
+
+.event-form label {
+  font-weight: bold;
+  color: #7021a3;
+}
+
+.event-form input {
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 16px;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.event-form input:focus {
+  outline: 2px solid #8e44ad;
+  border-color: #8e44ad;
+}
+
+.event-form button {
+  align-self: center;
+}
+
+/* Styling for saved events */
+.event-card {
+  background: #f8f0ff;
+  border: 1px solid #e1c9f5;
+  border-left: 5px solid #8e44ad;
+  border-radius: 12px;
+  padding: 20px;
+  margin-top: 20px;
+  text-align: left;
+  box-shadow: 0 4px 12px rgba(100, 50, 150, 0.08);
+}
+
+.event-card h3 {
+  color: #7021a3;
+  font-size: 22px;
+  margin: 0 0 12px;
+}
+
+.event-card p {
+  color: #555;
+  margin: 8px 0;
+  font-size: 15px;
+}
+
+.event-card strong {
+  color: #7021a3;
+}
+
+/* Form validation messages */
+.error-message {
+  color: #c62828;
+  font-size: 13px;
+  font-weight: 500;
+  margin-top: 4px;
+  display: block;
+}
+
+/* RSVP dropdown styling */
+.event-form select {
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 16px;
+  width: 100%;
+  box-sizing: border-box;
+  background-color: white;
+}
+
+.event-form select:focus {
+  outline: 2px solid #8e44ad;
+  border-color: #8e44ad;
+}
